@@ -1,0 +1,40 @@
+.hamburger
+    background: #686D7680
+    backdrop-filter: blur(10px)
+    position: fixed
+    top: 0
+    right: 100%
+    z-index: 100
+    width: 100vw
+    height: 100vh
+    padding: 25px 0 30px
+    transition: right .15s ease-in
+    &.-active
+        right: 0
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 24px
+        margin-bottom: 34px
+        width: 100%
+    &__close
+        width: 36px
+        height: 26px
+        background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.0124 11.4582L11.9581 24.5124C11.6608 24.8098 11.0937 24.7358 10.7071 24.3493C10.3206 23.9627 10.2466 23.3956 10.5439 23.0982L23.5982 10.0439C23.8956 9.7466 24.4627 9.82057 24.8492 10.2071C25.2358 10.5937 25.3098 11.1608 25.0124 11.4582Z' fill='white'/%3E%3Cpath d='M23.5983 24.5124L10.544 11.4581C10.2467 11.1608 10.3206 10.5937 10.7072 10.2071C11.0938 9.82056 11.6609 9.74658 11.9582 10.0439L25.0125 23.0982C25.3099 23.3956 25.2359 23.9627 24.8493 24.3492C24.4628 24.7358 23.8956 24.8098 23.5983 24.5124Z' fill='white'/%3E%3C/svg%3E%0A")
+    &__menu
+        flex-direction: column
+        align-items: center
+        gap: 30px
+        padding-bottom: 25px
+        border-bottom: 1px solid rgba(62, 62, 62, .5)
+        margin-bottom: 25px
+    &__location
+        margin-bottom: 20px
+    &__info
+        margin-bottom: 40px
+    &__social

@@ -1,0 +1,127 @@
+@import libs/normalize
+@font-face
+    font-family: 'Gilroy'
+    src: url('../fonts/Gilroy-Regular.ttf')
+    font-weight: 400
+    font-style: normal
+@font-face
+    font-family: 'Gilroy'
+    src: url('../fonts/Gilroy-Medium.ttf')
+    font-weight: 500
+    font-style: normal
+@font-face
+    font-family: 'Gilroy'
+    src: url('../fonts/Gilroy-Semibold.ttf')
+    font-weight: 600
+    font-style: normal
+*
+    box-sizing: border-box
+
+html,
+body
+    scroll-behavior: smooth
+body
+    font-family: 'Gilroy', sans-serif
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
+    color: #fff
+    background: #373A40
+a
+    color: #FF4C4C
+    text-decoration: underline
+input
+    width: 100%
+    padding: 32px
+    border: 1px solid #3E3E3E
+    background: transparent
+    @media (max-width: 1023px)
+        padding: 25px 20px
+.wrapper
+    width: 100%
+    max-width: 1400px
+    padding: 0 15px
+    margin: 0 auto
+img
+    width: 100%
+    height: auto
+    display: block
+h1, .h1
+    font-size: 52px
+    font-weight: 600
+    line-height: 60px
+    @media (max-width: 1023px)
+        font-size: 28px
+        line-height: 38px
+h2, .h2
+    font-size: 36px
+    font-weight: 500
+    line-height: 44px
+    @media (max-width: 1023px)
+        font-size: 24px
+        font-weight: 500
+        line-height: 32px
+h3, .h3
+    font-size: 24px
+    font-weight: 600
+    line-height: 32px
+    @media (max-width: 1023px)
+        font-size: 20px
+        line-height: 28px
+
+.logo
+    max-width: 183px
+.btn
+    box-shadow: 0px 16px 34px 0px #FC67368C
+    padding: 12px 70px
+    font-size: 24px
+    line-height: 32px
+    background: #FC6736
+    width: fit-content
+    border: none
+    color: #fff
+    text-decoration: none
+    cursor: pointer
+    text-align: center
+    @media (max-width: 1023px)
+        font-size: 16px
+        line-height: 24px
+
+    &--sm
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        padding: 8px
+.location
+    font-weight: 600
+    padding-left: 25px
+    position: relative
+    &::before
+        content: ""
+        width: 20px
+        height: 20px
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.53271 8.65956C3.54472 5.12574 6.41918 2.27075 9.95301 2.28275C13.4868 2.29476 16.3418 5.16922 16.3298 8.70304V8.77551C16.2863 11.0726 15.0037 13.1958 13.4313 14.8552C12.532 15.7891 11.5277 16.6158 10.4385 17.319C10.1473 17.5709 9.71526 17.5709 9.42402 17.319C7.80027 16.2621 6.37516 14.9278 5.21387 13.377C4.17884 12.0246 3.59119 10.3833 3.53271 8.6813L3.53271 8.65956Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cellipse cx='9.93119' cy='8.78315' rx='2.05072' ry='2.05072' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+.hamburger-icon
+    width: 36px
+    height: 36px
+    background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M27.2308 12.5H8.76923C8.34872 12.5 8 12.0467 8 11.5C8 10.9533 8.34872 10.5 8.76923 10.5H27.2308C27.6513 10.5 28 10.9533 28 11.5C28 12.0467 27.6513 12.5 27.2308 12.5Z' fill='white'/%3E%3Cpath d='M27.2308 19.5H8.76923C8.34872 19.5 8 19.0467 8 18.5C8 17.9533 8.34872 17.5 8.76923 17.5H27.2308C27.6513 17.5 28 17.9533 28 18.5C28 19.0467 27.6513 19.5 27.2308 19.5Z' fill='white'/%3E%3Cpath d='M27.2308 25.5H8.76923C8.34872 25.5 8 25.0467 8 24.5C8 23.9533 8.34872 23.5 8.76923 23.5H27.2308C27.6513 23.5 28 23.9533 28 24.5C28 25.0467 27.6513 25.5 27.2308 25.5Z' fill='white'/%3E%3C/svg%3E%0A")
+@import blocks/form
+@import blocks/menu
+@import blocks/social
+@import blocks/info
+@import blocks/controls
+@import blocks/banner
+@import blocks/header
+@import blocks/about
+@import blocks/advantages
+@import blocks/vacancies
+@import blocks/estimation
+@import blocks/reviews
+@import blocks/faq
+@import blocks/contacts
+@import blocks/footer
+@import blocks/hamburger

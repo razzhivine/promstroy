@@ -1,0 +1,39 @@
+.reviews
+    margin-bottom: 40px
+    position: relative
+    @media (max-width: 767px)
+        padding-bottom: 48px
+    &__top
+        display: flex
+        justify-content: space-between
+        gap: 24px
+        align-items: baseline
+    &__title
+        margin-bottom: 40px
+        @media (max-width: 767px)
+            margin-bottom: 20px
+    &__controls
+        @media (max-width: 767px)
+            position: absolute
+            bottom: 0
+    &__slider
+    
+    &__item
+        background: #686D76
+        position: relative
+        padding: 90px 66px 20px 30px
+        @media (max-width: 767px)
+            padding: 40px 10px 20px 12px 
+        &-image
+            position: absolute
+            max-width: 220px
+            top: 0
+            right: 0
+            z-index: -1
+        &-name
+            margin-bottom: 10px
+        &-date
+            margin-bottom: 15px
+        &-text
+            margin-bottom: 10px
+        &-estimation

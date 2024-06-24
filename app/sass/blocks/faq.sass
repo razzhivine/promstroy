@@ -1,0 +1,50 @@
+.faq
+    margin-bottom: 70px
+    margin-bottom: 40px
+    &__title
+        margin-bottom: 24px
+        @media (max-width: 767px)
+            margin-bottom: 20px
+    &__list
+    &__item
+        padding: 40px 40px 37px 0
+        position: relative
+        display: flex
+        flex-direction: column
+        gap: 40px
+        @media (max-width: 767px)
+            padding: 20px 47px 20px 0
+            gap: 20px
+        &::before
+            content: ""
+            width: 100vw
+            height: 100%
+            border-top: 1px solid #3E3E3E
+            border-bottom: 1px solid #3E3E3E
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+        &::after
+            content: ""
+            width: 40px
+            height: 40px
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 20H30' stroke='url(%23paint0_linear_122_875)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20 30V10' stroke='url(%23paint1_linear_122_875)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_122_875' x1='10.4' y1='20.5' x2='17.9212' y2='29.9022' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_122_875' x1='20.02' y1='19.9992' x2='20.9837' y2='20.0022' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+            background-size: contain
+            position: absolute
+            top: 40px
+            right: 0
+            @media (max-width: 767px)
+                top: 20px
+                width: 28px
+                height: 28px
+        &-question
+        &-answer
+            display: none
+            @media (max-width: 767px)
+                width: calc( 100% + 47px )
+        &.-active
+            &::after
+                background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' rx='20' fill='url(%23paint0_linear_122_879)'/%3E%3Cpath d='M12.9289 27.071L27.071 12.9289' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M27.071 27.0711L12.9289 12.929' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_122_879' x1='0.799951' y1='19.9983' x2='39.1999' y2='22.3985' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+            .faq__item-answer
+                display: block

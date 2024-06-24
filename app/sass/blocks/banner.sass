@@ -1,0 +1,85 @@
+.banner
+    background: url('../images/dest/banner.png')
+    background-size: cover
+    height: 100vh
+    @media (max-width: 1023px)
+        height: auto
+        background-position: top right
+    &__inner    
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        gap: 24px
+        height: 100vh
+
+        padding-bottom: 75px
+        position: relative
+        @media (max-width: 1023px)
+            height: auto
+        &::before
+            content: ""
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            border-left: 1px solid #3E3E3E
+            border-right: 1px solid #3E3E3E 
+        &::after
+            content: ""
+            position: absolute
+            width: 1px
+            height: 100%
+            background: #3E3E3E
+            top: 0
+            left: calc( 50% + 11px )
+            z-index: 0
+            @media (max-width: 1023px)
+                content: none
+    &__header
+        position: relative
+        z-index: 1
+    &__content
+        max-width: 600px
+        @media (max-width: 1023px)
+            margin-top: 71px
+    &__title
+        font-weight: 400
+        margin-bottom: 30px
+        @media (max-width: 1023px)
+            margin-bottom: 10px
+    &__advantages
+        display: flex
+        flex-direction: column
+        gap: 10px
+        @media (max-width: 1023px)
+            margin-bottom: 60px
+        &-item
+            font-size: 24px
+            line-height: 32px
+            padding-left: 25px
+            position: relative
+            &::before
+                content: ""
+                width: 20px
+                height: 20px
+                position: absolute
+                top: 50%
+                left: 0
+                transform: translateY(-50%)
+            &--car
+                &::before
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.2833 7.125L17.4083 6.25C16.9914 5.82833 16.4262 5.58613 15.8333 5.575H12.5V5.09167C12.5 3.82602 11.474 2.8 10.2083 2.8H3.33332C2.98815 2.8 2.70832 3.07983 2.70832 3.425C2.70832 3.77018 2.98815 4.05 3.33332 4.05H10.1833C10.7586 4.05 11.225 4.51637 11.225 5.09167V10.3667C11.225 10.7118 11.5048 10.9917 11.85 10.9917C12.1952 10.9917 12.475 10.7118 12.475 10.3667V6.825H15.8083C16.0845 6.82391 16.3492 6.93522 16.5417 7.13334L17.4167 7.96667C17.536 8.09039 17.622 8.24235 17.6667 8.40834H14.1667C13.8215 8.40834 13.5417 8.68816 13.5417 9.03334C13.5417 9.37851 13.8215 9.65834 14.1667 9.65834H17.7083V13.2C17.7197 13.4834 17.615 13.7592 17.4184 13.9637C17.2218 14.1681 16.9503 14.2836 16.6667 14.2833H15.7417C15.5366 13.3219 14.6873 12.6346 13.7042 12.6346C12.721 12.6346 11.8717 13.3219 11.6667 14.2833H7.21666C6.99236 13.2895 6.07725 12.6074 5.06077 12.6764C4.04428 12.7454 3.22971 13.5449 3.14175 14.5599C3.05378 15.5749 3.71865 16.5026 4.70812 16.7454C5.69758 16.9883 6.71639 16.4738 7.10832 15.5333H11.7833C12.1081 16.3068 12.8652 16.81 13.7042 16.81C14.5431 16.81 15.3002 16.3068 15.625 15.5333H16.6667C17.9323 15.5333 18.9583 14.5073 18.9583 13.2417V8.75C18.9595 8.13991 18.7164 7.55474 18.2833 7.125ZM5.18332 15.4C4.90355 15.4136 4.64379 15.2552 4.52791 15.0002C4.41204 14.7452 4.46352 14.4453 4.65781 14.2435C4.8521 14.0417 5.14985 13.979 5.40905 14.0851C5.66825 14.1913 5.83641 14.4449 5.83332 14.725C5.83357 15.0882 5.54632 15.3865 5.18332 15.4ZM13.0679 14.9762C13.1732 15.2326 13.4229 15.4 13.7 15.4C14.0742 15.4 14.3788 15.0991 14.3833 14.725C14.3867 14.4479 14.2224 14.1962 13.9673 14.0878C13.7123 13.9794 13.417 14.0358 13.2198 14.2305C13.0227 14.4253 12.9627 14.7198 13.0679 14.9762Z' fill='url(%23paint0_linear_120_258)'/%3E%3Cpath d='M8.95832 7.5C8.95384 7.1567 8.67663 6.87949 8.33332 6.875H1.66666C1.32148 6.875 1.04166 7.15482 1.04166 7.5C1.04166 7.84518 1.32148 8.125 1.66666 8.125H8.33332C8.67663 8.12051 8.95384 7.8433 8.95832 7.5Z' fill='url(%23paint1_linear_120_258)'/%3E%3Cpath d='M8.33332 9.375H4.16666C3.82148 9.375 3.54166 9.65482 3.54166 10C3.54166 10.3452 3.82148 10.625 4.16666 10.625H8.33332C8.6785 10.625 8.95832 10.3452 8.95832 10C8.95832 9.65482 8.6785 9.375 8.33332 9.375Z' fill='url(%23paint2_linear_120_258)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_120_258' x1='1.39997' y1='9.80442' x2='18.5575' y2='11.1759' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_120_258' x1='1.39997' y1='9.80442' x2='18.5575' y2='11.1759' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear_120_258' x1='1.39997' y1='9.80442' x2='18.5575' y2='11.1759' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+            &--doc
+                &::before
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.20832 10.675H7.04999C6.82606 10.675 6.61153 10.585 6.45476 10.4251C6.29799 10.2652 6.21218 10.0489 6.21666 9.825V8.66667C6.21666 8.20643 6.58975 7.83333 7.04999 7.83333H8.20832C8.66856 7.83333 9.04166 8.20643 9.04166 8.66667V9.84167C9.04166 10.3019 8.66856 10.675 8.20832 10.675ZM7.80832 9.06667H7.44999V9.425H7.80832V9.06667Z' fill='url(%23paint0_linear_120_262)'/%3E%3Cpath d='M6.77499 12.7833H10.4667C10.8118 12.7833 11.0917 12.5035 11.0917 12.1583C11.0917 11.8132 10.8118 11.5333 10.4667 11.5333H6.77499C6.42981 11.5333 6.14999 11.8132 6.14999 12.1583C6.14999 12.5035 6.42981 12.7833 6.77499 12.7833Z' fill='url(%23paint1_linear_120_262)'/%3E%3Cpath d='M11.6667 13.6417H6.77499C6.42981 13.6417 6.14999 13.9215 6.14999 14.2667C6.14999 14.6118 6.42981 14.8917 6.77499 14.8917H11.6667C12.0118 14.8917 12.2917 14.6118 12.2917 14.2667C12.2917 13.9215 12.0118 13.6417 11.6667 13.6417Z' fill='url(%23paint2_linear_120_262)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.275 7.86667L10.4417 2.03333C10.3189 1.9281 10.1617 1.87174 9.99999 1.875H7.49999C5.31386 1.875 3.54166 3.64721 3.54166 5.83333V14.1667C3.54166 16.3528 5.31386 18.125 7.49999 18.125H12.5C14.6861 18.125 16.4583 16.3528 16.4583 14.1667V8.33333C16.4612 8.15968 16.3953 7.99195 16.275 7.86667ZM10.625 3.99167L14.3417 7.70833H11.6667C11.0914 7.70833 10.625 7.24196 10.625 6.66667V3.99167ZM4.79166 14.1667C4.79623 15.6605 6.00612 16.8704 7.49999 16.875H12.5C13.9939 16.8704 15.2037 15.6605 15.2083 14.1667V8.95833H11.6667C10.401 8.95833 9.37499 7.93232 9.37499 6.66667V3.125H7.49999C6.00612 3.12958 4.79623 4.33946 4.79166 5.83333V14.1667Z' fill='url(%23paint3_linear_120_262)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_120_262' x1='3.79998' y1='9.99924' x2='16.2178' y2='10.6162' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_120_262' x1='3.79998' y1='9.99924' x2='16.2178' y2='10.6162' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear_120_262' x1='3.79998' y1='9.99924' x2='16.2178' y2='10.6162' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint3_linear_120_262' x1='3.79998' y1='9.99924' x2='16.2178' y2='10.6162' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+            &--house
+                &::before
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.9083 5.83373L12.275 2.40873C10.9197 1.41931 9.08029 1.41931 7.72499 2.40873L3.09999 5.83373C2.20452 6.47885 1.67174 7.51344 1.66666 8.61707V14.8087C1.71668 16.8031 3.3722 18.3803 5.36666 18.3337H14.6333C16.6278 18.3803 18.2833 16.8031 18.3333 14.8087V8.60873C18.3262 7.50987 17.7972 6.4798 16.9083 5.83373ZM17.0833 14.8087C17.0336 16.1129 15.9376 17.1306 14.6333 17.0837H5.36666C4.06414 17.126 2.97084 16.1108 2.91666 14.8087V8.61707C2.9211 7.90867 3.26513 7.2454 3.84166 6.83373L8.46666 3.41707C9.38007 2.75005 10.6199 2.75005 11.5333 3.41707L16.1583 6.84207C16.7344 7.24659 17.079 7.90486 17.0833 8.60873V14.8087ZM6.24999 13.1254H13.75C14.0952 13.1254 14.375 13.4052 14.375 13.7504C14.375 14.0956 14.0952 14.3754 13.75 14.3754H6.24999C5.90481 14.3754 5.62499 14.0956 5.62499 13.7504C5.62499 13.4052 5.90481 13.1254 6.24999 13.1254Z' fill='url(%23paint0_linear_120_266)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_120_266' x1='1.99997' y1='10' x2='18' y2='11' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+    &__cta
+        max-width: 400px
+        &-title
+            margin-bottom: 20px
+    &__btn
+        z-index: 1
+        position: relative

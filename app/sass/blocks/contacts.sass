@@ -1,0 +1,73 @@
+.contacts
+    display: flex
+    gap: 24px
+    justify-content: space-between
+    padding-bottom: 70px
+    position: relative
+    flex-wrap: wrap
+    @media (max-width: 1023px)
+        padding-bottom: 40px
+        gap: 30px
+    &::before
+        content: ""
+        width: 100%
+        height: calc( 100% + 70px )
+        position: absolute
+        top: -70px
+        left: 0
+        border-left: 1px solid #3E3E3E
+        border-right: 1px solid #3E3E3E 
+        @media (max-width: 1023px)
+            content: none
+    &__block
+        width: calc( 33.33333% - 12px )
+        &:last-child
+            width: calc( 66.66666% - 12px )
+            @media (max-width: 1023px)
+                width: 100%
+        @media (max-width: 1023px)
+            width: 100%
+            
+    &__title
+        margin-bottom: 60px
+        @media (max-width: 1023px)
+            margin-bottom: 20px
+    &__list
+        display: flex
+        flex-direction: column
+        gap: 40px
+        @media (max-width: 1023px)
+            gap: 20px
+    &__item
+        position: relative
+        padding-top: 44px
+        color: #fff
+        text-decoration: none
+        @media (max-width: 1023px)
+            padding-top: 38px
+        &::before
+            content: ""
+            width: 24px
+            height: 24px
+            position: absolute
+            top: 0
+            left: 0
+            background-size: contain
+            background-repeat: no-repeat
+            @media (max-width: 1023px)
+                width: 18px
+                height: 18px
+        &--location
+            &::before
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='26' viewBox='0 0 24 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 14.5915C13.7664 14.5915 15.2 13.1588 15.2 11.3935C15.2 9.62826 13.7664 8.19561 12 8.19561C10.2336 8.19561 8.79999 9.62826 8.79999 11.3935C8.79999 13.1588 10.2336 14.5915 12 14.5915Z' stroke='url(%23paint0_linear_122_939)' stroke-width='2' stroke-linecap='square'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.6 11.3935C21.6 19.3883 13.6 24.1852 12 24.1852C10.4 24.1852 2.39999 19.3883 2.39999 11.3935C2.39999 6.09616 6.69919 1.7998 12 1.7998C17.3008 1.7998 21.6 6.09616 21.6 11.3935Z' stroke='url(%23paint1_linear_122_939)' stroke-width='2' stroke-linecap='square'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_122_939' x1='2.78397' y1='12.9916' x2='21.2349' y2='13.9807' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_122_939' x1='2.78397' y1='12.9916' x2='21.2349' y2='13.9807' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+        &--phone
+            &::before
+                background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.55075 1.7998H4.99999C3.23268 1.7998 1.79999 3.23249 1.79999 4.9998V8.1998C1.79999 17.0364 8.96343 24.1998 17.8 24.1998H21C22.7673 24.1998 24.2 22.7671 24.2 20.9998V18.7887C24.2 18.1826 23.8576 17.6286 23.3155 17.3576L19.45 15.4248C18.5792 14.9894 17.5245 15.4262 17.2166 16.35L16.7402 17.7792C16.4316 18.705 15.4819 19.2562 14.5249 19.0648C10.6949 18.2988 7.70102 15.3049 6.935 11.4749C6.74361 10.5179 7.29475 9.56822 8.22056 9.25961L9.99437 8.66834C10.7875 8.40396 11.2434 7.57349 11.0406 6.76239L10.103 3.01175C9.92491 2.29948 9.28493 1.7998 8.55075 1.7998Z' stroke='url(%23paint0_linear_122_943)' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_122_943' x1='2.24796' y1='12.9989' x2='23.7519' y2='14.343' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+        &--mail
+            &::before
+                background-image: url("data:image/svg+xml,%3Csvg width='26' height='24' viewBox='0 0 26 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.79999 7.1999L13 13.5999L24.2 7.1999M3.39999 2.3999H22.6C23.4836 2.3999 24.2 3.11625 24.2 3.9999V19.9999C24.2 20.8836 23.4836 21.5999 22.6 21.5999H3.39999C2.51633 21.5999 1.79999 20.8836 1.79999 19.9999V3.9999C1.79999 3.11625 2.51633 2.3999 3.39999 2.3999Z' stroke='url(%23paint0_linear_122_947)' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_122_947' x1='2.24796' y1='11.9991' x2='23.7218' y2='13.565' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF4C4C'/%3E%3Cstop offset='1' stop-color='%23FF8A00'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+    &__form
+        max-width: 800px
+        padding-right: 5px
+        @media (max-width: 1023px)
+            padding-right: 0

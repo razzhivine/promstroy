@@ -1,0 +1,48 @@
+.form
+    &__top
+        display: flex
+        gap: 24px
+        margin-bottom: 60px
+        @media (max-width: 1279px)
+            flex-direction: column
+            gap: 10px
+            margin-bottom: 15px
+    &__title
+        width: calc( 50% - 12px )
+        @media (max-width: 1279px)
+            width: 100%
+    &__text
+        width: calc( 50% - 12px )
+        @media (max-width: 1279px)
+            width: 100%
+        &-inner
+            max-width: 245px
+    &__questions
+        margin-bottom: 74px
+        @media (max-width: 1023px)
+            margin-bottom: 20px
+    &__input
+        border-bottom: none
+        z-index: 1
+        position: relative
+        &:last-child
+            border-bottom: 1px solid #3E3E3E
+    &__bottom
+        display: flex
+        gap: 24px
+        justify-content: space-between
+        @media (max-width: 1023px)
+            flex-direction: column-reverse
+            align-items: center
+            text-align: center
+            gap: 30px
+    &__policy
+        max-width: 455px
+        a
+            background: linear-gradient(93.58deg, #FF4C4C 4.82%, #FF8A00 95.53%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            color: #FF4C4C
+            position: relative
+    &__btn
+        z-index: 1
